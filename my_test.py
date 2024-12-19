@@ -19,3 +19,6 @@ from fairseq.data import iterators
 from fairseq.logging import meters, metrics, progress_bar
 from fairseq.model_parallel.megatron_trainer import MegatronTrainer
 from fairseq.trainer import Trainer
+
+if __name__ == "__main__":
+    print(torch.cuda.profiler.profile())

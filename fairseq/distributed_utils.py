@@ -38,6 +38,8 @@ def infer_init_method(args, force_distributed=False):
             raise ValueError('--pipeline-devices is currently required for pipeline model parallelism')
         gpus_per_node = torch.cuda.device_count()
         num_pipeline_devices = len(set(args.pipeline_devices))
+        print(f"--- gpus_per_node: {gpus_per_node}\n numpipline_devices: {num_pipeline_devices}")
+        input("Pause")
         assert gpus_per_node >= num_pipeline_devices and gpus_per_node % num_pipeline_devices == 0, (
             'the number of unique device IDs in --pipeline-devices must evenly divide '
             'the number of GPUs per node (multi-node pipelining is not yet supported)'
@@ -226,9 +228,13 @@ def distributed_main(i, main, args, kwargs):
 
 def call_main(args, main, **kwargs):
     if args.distributed_init_method is None:
+        print("distributed_utils---distributed_init_method is None")
+        input("Pause")
         infer_init_method(args)
 
     if args.distributed_init_method is not None:
+        print("distributed_utils---distributed_init_method is NOT None")
+        input("Pause")
         # distributed training
         if not args.distributed_no_spawn:
             start_rank = args.distributed_rank
@@ -251,6 +257,8 @@ def call_main(args, main, **kwargs):
         )
     else:
         # single GPU main
+        print("Called single GPU main")
+        input("--Pause")
         main(args, **kwargs)
 
 
