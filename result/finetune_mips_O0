@@ -2,4 +2,157 @@ Namespace(activation_dropout=0.0, activation_fn='gelu', adam_betas='(0.9,0.98)',
 Pausedistributed_utils---distributed_init_method is None
 PauseCalled single GPU main
 --PauseNamespace(activation_dropout=0.0, activation_fn='gelu', adam_betas='(0.9,0.98)', adam_eps=1e-06, all_gather_list_size=16384, arch='roberta_mf_nau', attention_dropout=0.1, best_checkpoint_metric='accuracy', bf16=False, bpe=None, broadcast_buffers=False, bucket_cap_mb=25, checkpoint_suffix='', classification_head_name='data_structure_head', clip_norm=0.0, cpu=False, criterion='data_structure_mf', curriculum=0, data='data-bin/finetune/mips-O0', data_buffer_size=10, dataset_impl=None, ddp_backend='c10d', device_id=0, disable_validation=False, distributed_backend='nccl', distributed_init_method=None, distributed_no_spawn=False, distributed_num_procs=1, distributed_port=-1, distributed_rank=0, distributed_world_size=1, distributed_wrapper='DDP', dropout=0.1, empty_cache_freq=0, encoder_attention_heads=12, encoder_embed_dim=768, encoder_ffn_embed_dim=3072, encoder_layerdrop=0, encoder_layers=8, encoder_layers_to_keep=None, end_learning_rate=0.0, fast_stat_sync=False, find_unused_parameters=False, finetune_from_model=None, fix_batches_to_gpus=False, fixed_validation_seed=None, force_anneal=None, fp16=True, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, keep_best_checkpoints=-1, keep_interval_updates=-1, keep_last_epochs=-1, localsgd_frequency=3, log_format='json', log_interval=10, lr=[1e-05], lr_scheduler='polynomial_decay', max_epoch=0, max_positions=512, max_sentences=8, max_sentences_valid=8, max_tokens=None, max_tokens_valid=None, max_update=6000, maximize_best_checkpoint_metric=True, memory_efficient_bf16=False, memory_efficient_fp16=True, min_loss_scale=0.0001, min_lr=-1, model_parallel_size=1, no_epoch_checkpoints=True, no_last_checkpoints=False, no_progress_bar=False, no_save=False, no_save_optimizer_state=False, no_seed_provided=True, no_shuffle=False, nprocs_per_node=1, num_classes=44, num_workers=1, optimizer='adam', optimizer_overrides='{}', patience=-1, pipeline_balance=None, pipeline_checkpoint='never', pipeline_chunks=None, pipeline_devices=None, pipeline_model_parallel=False, pooler_activation_fn='tanh', pooler_dropout=0.0, power=1.0, profile=False, quant_noise_pq=0, quant_noise_pq_block_size=8, quant_noise_scalar=0, quantization_config_path=None, required_batch_size_multiple=8, required_seq_len_multiple=1, reset_dataloader=True, reset_lr_scheduler=False, reset_meters=True, reset_optimizer=True, restore_file='checkpoints/finetune_mips_O0/checkpoint_best.pt', save_dir='checkpoints/finetune_mips_O0/', save_interval=1, save_interval_updates=0, scoring='bleu', seed=1, sentence_avg=False, skip_invalid_size_inputs_valid_test=False, slowmo_algorithm='LocalSGD', slowmo_momentum=None, stop_time_hours=0, task='data_structure_mf', tensorboard_logdir='', threshold_loss_scale=None, tokenizer=None, total_num_update=6000, tpu=False, train_subset='train', update_freq=[4], use_bmuf=False, use_old_adam=False, user_dir=None, valid_subset='valid', validate_after_updates=0, validate_interval=1, validate_interval_updates=0, warmup_updates=100, weight_decay=0.01, zero_sharding='none')
-Pause2024-12-20 04:17:01 | INFO | fairseq_cli.train | Namespace(activation_dropout=0.0, activation_fn='gelu', adam_betas='(0.9,0.98)', adam_eps=1e-06, all_gather_list_size=16384, arch='roberta_mf_nau', attention_dropout=0.1, best_checkpoint_metric='accuracy', bf16=False, bpe=None, broadcast_buffers=False, bucket_cap_mb=25, checkpoint_suffix='', classification_head_name='data_structure_head', clip_norm=0.0, cpu=False, criterion='data_structure_mf', curriculum=0, data='data-bin/finetune/mips-O0', data_buffer_size=10, dataset_impl=None, ddp_backend='c10d', device_id=0, disable_validation=False, distributed_backend='nccl', distributed_init_method=None, distributed_no_spawn=False, distributed_num_procs=1, distributed_port=-1, distributed_rank=0, distributed_world_size=1, distributed_wrapper='DDP', dropout=0.1, empty_cache_freq=0, encoder_attention_heads=12, encoder_embed_dim=768, encoder_ffn_embed_dim=3072, encoder_layerdrop=0, encoder_layers=8, encoder_layers_to_keep=None, end_learning_rate=0.0, fast_stat_sync=False, find_unused_parameters=False, finetune_from_model=None, fix_batches_to_gpus=False, fixed_validation_seed=None, force_anneal=None, fp16=True, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, keep_best_checkpoints=-1, keep_interval_updates=-1, keep_last_epochs=-1, localsgd_frequency=3, log_format='json', log_interval=10, lr=[1e-05], lr_scheduler='polynomial_decay', max_epoch=0, max_positions=512, max_sentences=8, max_sentences_valid=8, max_tokens=None, max_tokens_valid=None, max_update=6000, maximize_best_checkpoint_metric=True, memory_efficient_bf16=False, memory_efficient_fp16=True, min_loss_scale=0.0001, min_lr=-1, model_parallel_size=1, no_epoch_checkpoints=True, no_last_checkpoints=False, no_progress_bar=False, no_save=False, no_save_optimizer_state=False, no_seed_provided=True, no_shuffle=False, nprocs_per_node=1, num_classes=44, num_workers=1, optimizer='adam', optimizer_overrides='{}', patience=-1, pipeline_balance=None, pipeline_checkpoint='never', pipeline_chunks=None, pipeline_devices=None, pipeline_model_parallel=False, pooler_activation_fn='tanh', pooler_dropout=0.0, power=1.0, profile=False, quant_noise_pq=0, quant_noise_pq_block_size=8, quant_noise_scalar=0, quantization_config_path=None, required_batch_size_multiple=8, required_seq_len_multiple=1, reset_dataloader=True, reset_lr_scheduler=False, reset_meters=True, reset_optimizer=True, restore_file='checkpoints/finetune_mips_O0/checkpoint_best.pt', save_dir='checkpoints/finetune_mips_O0/', save_interval=1, save_interval_updates=0, scoring='bleu', seed=1, sentence_avg=False, skip_invalid_size_inputs_valid_test=False, slowmo_algorithm='LocalSGD', slowmo_momentum=None, stop_time_hours=0, task='data_structure_mf', tensorboard_logdir='', threshold_loss_scale=None, tokenizer=None, total_num_update=6000, tpu=False, train_subset='train', update_freq=[4], use_bmuf=False, use_old_adam=False, user_dir=None, valid_subset='valid', validate_after_updates=0, validate_interval=1, validate_interval_updates=0, warmup_updates=100, weight_decay=0.01, zero_sharding='none')
+Pause2024-12-27 05:00:24 | INFO | fairseq_cli.train | Namespace(activation_dropout=0.0, activation_fn='gelu', adam_betas='(0.9,0.98)', adam_eps=1e-06, all_gather_list_size=16384, arch='roberta_mf_nau', attention_dropout=0.1, best_checkpoint_metric='accuracy', bf16=False, bpe=None, broadcast_buffers=False, bucket_cap_mb=25, checkpoint_suffix='', classification_head_name='data_structure_head', clip_norm=0.0, cpu=False, criterion='data_structure_mf', curriculum=0, data='data-bin/finetune/mips-O0', data_buffer_size=10, dataset_impl=None, ddp_backend='c10d', device_id=0, disable_validation=False, distributed_backend='nccl', distributed_init_method=None, distributed_no_spawn=False, distributed_num_procs=1, distributed_port=-1, distributed_rank=0, distributed_world_size=1, distributed_wrapper='DDP', dropout=0.1, empty_cache_freq=0, encoder_attention_heads=12, encoder_embed_dim=768, encoder_ffn_embed_dim=3072, encoder_layerdrop=0, encoder_layers=8, encoder_layers_to_keep=None, end_learning_rate=0.0, fast_stat_sync=False, find_unused_parameters=False, finetune_from_model=None, fix_batches_to_gpus=False, fixed_validation_seed=None, force_anneal=None, fp16=True, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, keep_best_checkpoints=-1, keep_interval_updates=-1, keep_last_epochs=-1, localsgd_frequency=3, log_format='json', log_interval=10, lr=[1e-05], lr_scheduler='polynomial_decay', max_epoch=0, max_positions=512, max_sentences=8, max_sentences_valid=8, max_tokens=None, max_tokens_valid=None, max_update=6000, maximize_best_checkpoint_metric=True, memory_efficient_bf16=False, memory_efficient_fp16=True, min_loss_scale=0.0001, min_lr=-1, model_parallel_size=1, no_epoch_checkpoints=True, no_last_checkpoints=False, no_progress_bar=False, no_save=False, no_save_optimizer_state=False, no_seed_provided=True, no_shuffle=False, nprocs_per_node=1, num_classes=44, num_workers=1, optimizer='adam', optimizer_overrides='{}', patience=-1, pipeline_balance=None, pipeline_checkpoint='never', pipeline_chunks=None, pipeline_devices=None, pipeline_model_parallel=False, pooler_activation_fn='tanh', pooler_dropout=0.0, power=1.0, profile=False, quant_noise_pq=0, quant_noise_pq_block_size=8, quant_noise_scalar=0, quantization_config_path=None, required_batch_size_multiple=8, required_seq_len_multiple=1, reset_dataloader=True, reset_lr_scheduler=False, reset_meters=True, reset_optimizer=True, restore_file='checkpoints/finetune_mips_O0/checkpoint_best.pt', save_dir='checkpoints/finetune_mips_O0/', save_interval=1, save_interval_updates=0, scoring='bleu', seed=1, sentence_avg=False, skip_invalid_size_inputs_valid_test=False, slowmo_algorithm='LocalSGD', slowmo_momentum=None, stop_time_hours=0, task='data_structure_mf', tensorboard_logdir='', threshold_loss_scale=None, tokenizer=None, total_num_update=6000, tpu=False, train_subset='train', update_freq=[4], use_bmuf=False, use_old_adam=False, user_dir=None, valid_subset='valid', validate_after_updates=0, validate_interval=1, validate_interval_updates=0, warmup_updates=100, weight_decay=0.01, zero_sharding='none')
+2024-12-27 05:00:24 | INFO | fairseq.tasks.data_structure_mf | | [input] static dictionary: 657 types
+2024-12-27 05:00:24 | INFO | fairseq.tasks.data_structure_mf | | [input] inst_pos_emb dictionary: 521 types
+2024-12-27 05:00:24 | INFO | fairseq.tasks.data_structure_mf | | [input] op_pos_emb dictionary: 33 types
+2024-12-27 05:00:24 | INFO | fairseq.tasks.data_structure_mf | | [input] arch_emb dictionary: 9 types
+2024-12-27 05:00:24 | INFO | fairseq.tasks.data_structure_mf | | [input] byte1 dictionary: 265 types
+2024-12-27 05:00:24 | INFO | fairseq.tasks.data_structure_mf | | [input] byte2 dictionary: 265 types
+2024-12-27 05:00:24 | INFO | fairseq.tasks.data_structure_mf | | [input] byte3 dictionary: 265 types
+2024-12-27 05:00:24 | INFO | fairseq.tasks.data_structure_mf | | [input] byte4 dictionary: 265 types
+| [label] dictionary: 49 types
+2024-12-27 05:00:24 | INFO | fairseq.tasks.data_structure_mf | cover dictionary: 8 types
+2024-12-27 05:00:24 | INFO | fairseq.data.data_utils | loaded 32 examples from: data-bin/finetune/mips-O0/static/valid
+2024-12-27 05:00:24 | INFO | fairseq.data.data_utils | loaded 32 examples from: data-bin/finetune/mips-O0/inst_pos_emb/valid
+2024-12-27 05:00:24 | INFO | fairseq.data.data_utils | loaded 32 examples from: data-bin/finetune/mips-O0/op_pos_emb/valid
+2024-12-27 05:00:24 | INFO | fairseq.data.data_utils | loaded 32 examples from: data-bin/finetune/mips-O0/arch_emb/valid
+2024-12-27 05:00:24 | INFO | fairseq.data.data_utils | loaded 32 examples from: data-bin/finetune/mips-O0/byte1/valid
+2024-12-27 05:00:24 | INFO | fairseq.data.data_utils | loaded 32 examples from: data-bin/finetune/mips-O0/byte2/valid
+2024-12-27 05:00:24 | INFO | fairseq.data.data_utils | loaded 32 examples from: data-bin/finetune/mips-O0/byte3/valid
+2024-12-27 05:00:24 | INFO | fairseq.data.data_utils | loaded 32 examples from: data-bin/finetune/mips-O0/byte4/valid
+2024-12-27 05:00:24 | INFO | fairseq.data.data_utils | loaded 32 examples from: data-bin/finetune/mips-O0/label/valid
+2024-12-27 05:00:24 | INFO | fairseq.tasks.data_structure_mf | Loaded valid with #samples: 32
+2024-12-27 05:00:25 | INFO | fairseq_cli.train | RobertaModelMFNAU(
+  (encoder): RobertaEncoderMF(
+    (sentence_encoder): TransformerSentenceEncoderMFNAU(
+      (dropout_module): FairseqDropout()
+      (embed_tokens_dict): ModuleDict(
+        (static): Embedding(657, 768, padding_idx=1)
+        (inst_pos_emb): Embedding(521, 768, padding_idx=1)
+        (op_pos_emb): Embedding(33, 768, padding_idx=1)
+        (arch_emb): Embedding(9, 768, padding_idx=1)
+      )
+      (byte_emb): Embedding(265, 768, padding_idx=1)
+      (bytecombine): ByteCombine(
+        (layer_1): ReRegualizedLinearNACLayer(in_features=3072, out_features=1024)
+        (layer_2): ReRegualizedLinearNACLayer(in_features=1024, out_features=768)
+        (act): GELU(approximate='none')
+      )
+      (layers): ModuleList(
+        (0-7): 8 x TransformerSentenceEncoderLayer(
+          (dropout_module): FairseqDropout()
+          (activation_dropout_module): FairseqDropout()
+          (self_attn): MultiheadAttention(
+            (dropout_module): FairseqDropout()
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (emb_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+    )
+    (lm_head_byte_value_all): RobertaLMHeadRegAll(
+      (dense): Linear(in_features=768, out_features=1536, bias=True)
+      (layer_norm): LayerNorm((1536,), eps=1e-05, elementwise_affine=True)
+      (output_dense): Linear(in_features=1536, out_features=4, bias=True)
+    )
+    (lm_head_cf): RobertaLMHeadCls(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+  (classification_heads): ModuleDict(
+    (data_structure_head): RobertaClassificationList(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (dropout): Dropout(p=0.0, inplace=False)
+      (out_proj): Linear(in_features=768, out_features=44, bias=True)
+    )
+  )
+)
+2024-12-27 05:00:25 | INFO | fairseq_cli.train | task: data_structure_mf (DataStructureMF)
+2024-12-27 05:00:25 | INFO | fairseq_cli.train | model: roberta_mf_nau (RobertaModelMFNAU)
+2024-12-27 05:00:25 | INFO | fairseq_cli.train | criterion: data_structure_mf (DataStructureMFCriterion)
+2024-12-27 05:00:25 | INFO | fairseq_cli.train | num. model params: 64190264 (num. trained: 64190264)
+2024-12-27 05:00:25 | INFO | fairseq.trainer | detected shared parameter: encoder.sentence_encoder.bytecombine.layer_1.bias <- encoder.sentence_encoder.bytecombine.layer_2.bias
+2024-12-27 05:00:25 | INFO | fairseq.utils | ***********************CUDA enviroments for all 1 workers***********************
+2024-12-27 05:00:25 | INFO | fairseq.utils | rank   0: capabilities =  9.0  ; total memory = 93.003 GB ; name = NVIDIA H100 NVL                         
+2024-12-27 05:00:25 | INFO | fairseq.utils | ***********************CUDA enviroments for all 1 workers***********************
+2024-12-27 05:00:25 | INFO | fairseq_cli.train | training on 1 devices (GPUs/TPUs)
+2024-12-27 05:00:25 | INFO | fairseq_cli.train | max tokens per GPU = None and max sentences per GPU = 8
+2024-12-27 05:00:25 | INFO | fairseq.trainer | no existing checkpoint found checkpoints/finetune_mips_O0/checkpoint_best.pt
+2024-12-27 05:00:25 | INFO | fairseq.trainer | loading train data for epoch 1
+2024-12-27 05:00:25 | INFO | fairseq.data.data_utils | loaded 342 examples from: data-bin/finetune/mips-O0/static/train
+2024-12-27 05:00:25 | INFO | fairseq.data.data_utils | loaded 342 examples from: data-bin/finetune/mips-O0/inst_pos_emb/train
+2024-12-27 05:00:25 | INFO | fairseq.data.data_utils | loaded 342 examples from: data-bin/finetune/mips-O0/op_pos_emb/train
+2024-12-27 05:00:25 | INFO | fairseq.data.data_utils | loaded 342 examples from: data-bin/finetune/mips-O0/arch_emb/train
+2024-12-27 05:00:25 | INFO | fairseq.data.data_utils | loaded 342 examples from: data-bin/finetune/mips-O0/byte1/train
+2024-12-27 05:00:25 | INFO | fairseq.data.data_utils | loaded 342 examples from: data-bin/finetune/mips-O0/byte2/train
+2024-12-27 05:00:25 | INFO | fairseq.data.data_utils | loaded 342 examples from: data-bin/finetune/mips-O0/byte3/train
+2024-12-27 05:00:25 | INFO | fairseq.data.data_utils | loaded 342 examples from: data-bin/finetune/mips-O0/byte4/train
+2024-12-27 05:00:25 | INFO | fairseq.data.data_utils | loaded 342 examples from: data-bin/finetune/mips-O0/label/train
+2024-12-27 05:00:25 | INFO | fairseq.tasks.data_structure_mf | Loaded train with #samples: 342
+2024-12-27 05:00:25 | INFO | fairseq.trainer | begin training epoch 1
+2024-12-27 05:00:26 | INFO | fairseq.trainer | NOTE: overflow detected, setting loss scale to: 64.0
+2024-12-27 05:00:26 | INFO | fairseq.trainer | NOTE: overflow detected, setting loss scale to: 32.0
+2024-12-27 05:00:27 | INFO | fairseq.trainer | NOTE: overflow detected, setting loss scale to: 16.0
+2024-12-27 05:00:27 | INFO | fairseq.trainer | NOTE: overflow detected, setting loss scale to: 8.0
+2024-12-27 05:00:27 | INFO | fairseq.trainer | NOTE: overflow detected, setting loss scale to: 4.0
+2024-12-27 05:00:28 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-12-27 05:00:29 | INFO | valid | {"epoch": 1, "valid_loss": "5.169", "valid_nll_loss": "5.151", "valid_precision": "0", "valid_recall": "0", "valid_F1": "0", "valid_accuracy": "0.4", "valid_wps": "121416", "valid_wpb": "2294.5", "valid_bsz": "2286.5", "valid_num_updates": "6"}
+2024-12-27 05:00:29 | INFO | fairseq_cli.train | begin save checkpoint
+2024-12-27 05:00:30 | INFO | fairseq.checkpoint_utils | saved checkpoint checkpoints/finetune_mips_O0/checkpoint_best.pt (epoch 1 @ 6 updates, score 0.4) (writing took 1.7957635060884058 seconds)
+2024-12-27 05:00:30 | INFO | fairseq_cli.train | end of epoch 1 (average epoch stats below)
+2024-12-27 05:00:30 | INFO | train | {"epoch": 1, "train_loss": "5.216", "train_nll_loss": "5.199", "train_precision": "0", "train_recall": "0.1", "train_F1": "0", "train_accuracy": "1.9", "train_wps": "15937.8", "train_ups": "1.71", "train_wpb": "9337.5", "train_bsz": "9306.8", "train_num_updates": "6", "train_lr": "6e-07", "train_gnorm": "20.215", "train_loss_scale": "4", "train_train_wall": "3", "train_wall": "5"}
+2024-12-27 05:00:30 | INFO | fairseq.trainer | begin training epoch 2
+2024-12-27 05:00:31 | INFO | train_inner | {"epoch": 2, "update": 1.364, "loss": "5.208", "nll_loss": "5.191", "precision": "0", "recall": "0.1", "F1": "0", "accuracy": "2.1", "wps": "21760.8", "ups": "2.29", "wpb": "9495.7", "bsz": "9464.5", "num_updates": "10", "lr": "1e-06", "gnorm": "20.22", "loss_scale": "4", "train_wall": "2", "wall": "6"}
+2024-12-27 05:00:33 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-12-27 05:00:33 | INFO | valid | {"epoch": 2, "valid_loss": "4.963", "valid_nll_loss": "4.945", "valid_precision": "0", "valid_recall": "0", "valid_F1": "0", "valid_accuracy": "7.1", "valid_wps": "125005", "valid_wpb": "2294.5", "valid_bsz": "2286.5", "valid_num_updates": "17", "valid_best_accuracy": "7.1"}
+2024-12-27 05:00:33 | INFO | fairseq_cli.train | begin save checkpoint
+2024-12-27 05:00:35 | INFO | fairseq.checkpoint_utils | saved checkpoint checkpoints/finetune_mips_O0/checkpoint_best.pt (epoch 2 @ 17 updates, score 7.1) (writing took 2.447287163231522 seconds)
+2024-12-27 05:00:35 | INFO | fairseq_cli.train | end of epoch 2 (average epoch stats below)
+2024-12-27 05:00:35 | INFO | train | {"epoch": 2, "train_loss": "5.15", "train_nll_loss": "5.133", "train_precision": "0", "train_recall": "0.1", "train_F1": "0", "train_accuracy": "3.6", "train_wps": "20627.4", "train_ups": "2.18", "train_wpb": "9469.2", "train_bsz": "9438.1", "train_num_updates": "17", "train_lr": "1.7e-06", "train_gnorm": "20.161", "train_loss_scale": "4", "train_train_wall": "2", "train_wall": "10"}
+2024-12-27 05:00:35 | INFO | fairseq.trainer | begin training epoch 3
+2024-12-27 05:00:36 | INFO | train_inner | {"epoch": 3, "update": 2.273, "loss": "5.084", "nll_loss": "5.067", "precision": "0", "recall": "0.1", "F1": "0", "accuracy": "6.2", "wps": "19899.6", "ups": "2.13", "wpb": "9361.2", "bsz": "9330.4", "num_updates": "20", "lr": "2e-06", "gnorm": "20.079", "loss_scale": "4", "train_wall": "2", "wall": "11"}
+2024-12-27 05:00:38 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-12-27 05:00:38 | INFO | valid | {"epoch": 3, "valid_loss": "4.148", "valid_nll_loss": "4.134", "valid_precision": "0", "valid_recall": "0", "valid_F1": "0", "valid_accuracy": "88.2", "valid_wps": "194843", "valid_wpb": "2294.5", "valid_bsz": "2286.5", "valid_num_updates": "28", "valid_best_accuracy": "88.2"}
+2024-12-27 05:00:38 | INFO | fairseq_cli.train | begin save checkpoint
+2024-12-27 05:00:40 | INFO | fairseq.checkpoint_utils | saved checkpoint checkpoints/finetune_mips_O0/checkpoint_best.pt (epoch 3 @ 28 updates, score 88.2) (writing took 2.083254722878337 seconds)
+2024-12-27 05:00:40 | INFO | fairseq_cli.train | end of epoch 3 (average epoch stats below)
+2024-12-27 05:00:40 | INFO | train | {"epoch": 3, "train_loss": "4.744", "train_nll_loss": "4.729", "train_precision": "0", "train_recall": "0.1", "train_F1": "0", "train_accuracy": "35.7", "train_wps": "23104", "train_ups": "2.44", "train_wpb": "9469.2", "train_bsz": "9438.1", "train_num_updates": "28", "train_lr": "2.8e-06", "train_gnorm": "19.874", "train_loss_scale": "4", "train_train_wall": "2", "train_wall": "15"}
+2024-12-27 05:00:40 | INFO | fairseq.trainer | begin training epoch 4
+2024-12-27 05:00:40 | INFO | train_inner | {"epoch": 4, "update": 3.182, "loss": "4.565", "nll_loss": "4.55", "precision": "0", "recall": "0.1", "F1": "0", "accuracy": "53.2", "wps": "22879.8", "ups": "2.41", "wpb": "9496.8", "bsz": "9465.6", "num_updates": "30", "lr": "3e-06", "gnorm": "19.778", "loss_scale": "4", "train_wall": "2", "wall": "15"}
+2024-12-27 05:00:41 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-12-27 05:00:41 | INFO | valid | {"epoch": 4, "valid_loss": "2.925", "valid_nll_loss": "2.915", "valid_precision": "0", "valid_recall": "0", "valid_F1": "0", "valid_accuracy": "94.8", "valid_wps": "139216", "valid_wpb": "2294.5", "valid_bsz": "2286.5", "valid_num_updates": "39", "valid_best_accuracy": "94.8"}
+2024-12-27 05:00:41 | INFO | fairseq_cli.train | begin save checkpoint
+2024-12-27 05:00:43 | INFO | fairseq.checkpoint_utils | saved checkpoint checkpoints/finetune_mips_O0/checkpoint_best.pt (epoch 4 @ 39 updates, score 94.8) (writing took 2.0906445696018636 seconds)
+2024-12-27 05:00:43 | INFO | fairseq_cli.train | end of epoch 4 (average epoch stats below)
+2024-12-27 05:00:43 | INFO | train | {"epoch": 4, "train_loss": "3.818", "train_nll_loss": "3.805", "train_precision": "0", "train_recall": "0", "train_F1": "0", "train_accuracy": "91.8", "train_wps": "29694", "train_ups": "3.14", "train_wpb": "9469.2", "train_bsz": "9438.1", "train_num_updates": "39", "train_lr": "3.9e-06", "train_gnorm": "18.692", "train_loss_scale": "4", "train_train_wall": "1", "train_wall": "18"}
+2024-12-27 05:00:43 | INFO | fairseq.trainer | begin training epoch 5
+2024-12-27 05:00:44 | INFO | train_inner | {"epoch": 5, "update": 4.091, "loss": "3.669", "nll_loss": "3.657", "precision": "0", "recall": "0", "F1": "0", "accuracy": "93.4", "wps": "27262.8", "ups": "2.9", "wpb": "9410.7", "bsz": "9379.7", "num_updates": "40", "lr": "4e-06", "gnorm": "18.411", "loss_scale": "4", "train_wall": "1", "wall": "19"}
+2024-12-27 05:00:45 | INFO | train_inner | {"epoch": 5, "update": 5.0, "loss": "2.245", "nll_loss": "2.237", "precision": "0", "recall": "0", "F1": "0", "accuracy": "94.4", "wps": "65760.9", "ups": "6.92", "wpb": "9502.5", "bsz": "9471.5", "num_updates": "50", "lr": "5e-06", "gnorm": "14.249", "loss_scale": "4", "train_wall": "1", "wall": "20"}
+2024-12-27 05:00:45 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-12-27 05:00:45 | INFO | valid | {"epoch": 5, "valid_loss": "1.233", "valid_nll_loss": "1.229", "valid_precision": "0", "valid_recall": "0", "valid_F1": "0", "valid_accuracy": "94.8", "valid_wps": "245689", "valid_wpb": "2294.5", "valid_bsz": "2286.5", "valid_num_updates": "50", "valid_best_accuracy": "94.8"}
+2024-12-27 05:00:45 | INFO | fairseq_cli.train | begin save checkpoint
+2024-12-27 05:00:48 | INFO | fairseq.checkpoint_utils | saved checkpoint checkpoints/finetune_mips_O0/checkpoint_best.pt (epoch 5 @ 50 updates, score 94.8) (writing took 2.3791590556502342 seconds)
+2024-12-27 05:00:48 | INFO | fairseq_cli.train | end of epoch 5 (average epoch stats below)
+2024-12-27 05:00:48 | INFO | train | {"epoch": 5, "train_loss": "2.324", "train_nll_loss": "2.316", "train_precision": "0", "train_recall": "0", "train_F1": "0", "train_accuracy": "94.5", "train_wps": "24862.2", "train_ups": "2.63", "train_wpb": "9469.2", "train_bsz": "9438.1", "train_num_updates": "50", "train_lr": "5e-06", "train_gnorm": "14.554", "train_loss_scale": "4", "train_train_wall": "2", "train_wall": "23"}
+2024-12-27 05:00:48 | INFO | fairseq.trainer | begin training epoch 6
+2024-12-27 05:00:49 | INFO | train_inner | {"epoch": 6, "update": 5.909, "loss": "1.124", "nll_loss": "1.12", "precision": "0", "recall": "0", "F1": "0", "accuracy": "94.4", "wps": "22942.8", "ups": "2.36", "wpb": "9724.1", "bsz": "9692.3", "num_updates": "60", "lr": "6e-06", "gnorm": "7.067", "loss_scale": "4", "train_wall": "2", "wall": "24"}
+2024-12-27 05:00:49 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-12-27 05:00:50 | INFO | valid | {"epoch": 6, "valid_loss": "0.732", "valid_nll_loss": "0.73", "valid_precision": "0", "valid_recall": "0", "valid_F1": "0", "valid_accuracy": "94.8", "valid_wps": "126276", "valid_wpb": "2294.5", "valid_bsz": "2286.5", "valid_num_updates": "61", "valid_best_accuracy": "94.8"}
+2024-12-27 05:00:50 | INFO | fairseq_cli.train | begin save checkpoint
+2024-12-27 05:00:52 | INFO | fairseq.checkpoint_utils | saved checkpoint checkpoints/finetune_mips_O0/checkpoint_best.pt (epoch 6 @ 61 updates, score 94.8) (writing took 2.327272809110582 seconds)
+2024-12-27 05:00:52 | INFO | fairseq_cli.train | end of epoch 6 (average epoch stats below)
+2024-12-27 05:00:52 | INFO | train | {"epoch": 6, "train_loss": "1.104", "train_nll_loss": "1.1", "train_precision": "0", "train_recall": "0", "train_F1": "0", "train_accuracy": "94.5", "train_wps": "23921.9", "train_ups": "2.53", "train_wpb": "9469.2", "train_bsz": "9438.1", "train_num_updates": "61", "train_lr": "6.1e-06", "train_gnorm": "6.84", "train_loss_scale": "4", "train_train_wall": "2", "train_wall": "27"}
+2024-12-27 05:00:52 | INFO | fairseq.trainer | begin training epoch 7
+2024-12-27 05:00:53 | INFO | train_inner | {"epoch": 7, "update": 6.818, "loss": "0.765", "nll_loss": "0.762", "precision": "0", "recall": "0", "F1": "0", "accuracy": "94.6", "wps": "22426.5", "ups": "2.4", "wpb": "9350.6", "bsz": "9319.6", "num_updates": "70", "lr": "7e-06", "gnorm": "3.354", "loss_scale": "4", "train_wall": "2", "wall": "28"}
+2024-12-27 05:00:54 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-12-27 05:00:54 | INFO | valid | {"epoch": 7, "valid_loss": "0.62", "valid_nll_loss": "0.618", "valid_precision": "0", "valid_recall": "0", "valid_F1": "0", "valid_accuracy": "94.8", "valid_wps": "238593", "valid_wpb": "2294.5", "valid_bsz": "2286.5", "valid_num_updates": "72", "valid_best_accuracy": "94.8"}
+2024-12-27 05:00:54 | INFO | fairseq_cli.train | begin save checkpoint

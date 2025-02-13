@@ -58,6 +58,7 @@ def main(args):
 
     # Print args
     logger.info(args)
+    input("Pause")
 
     # Setup task, e.g., translation, language modeling, etc.
     task = tasks.setup_task(args)

@@ -2,11 +2,6 @@
 import sys
 import os
 
-### add command to the python path to avoid no 'command' modul error
-proprecess_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
-if proprecess_path not in sys.path:
- sys.path.append(proprecess_path)
-
 from command.params import fields
 from multiprocessing import Pool
 import subprocess
