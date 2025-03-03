@@ -28,6 +28,7 @@ def is_master(args):
 
 
 def infer_init_method(args, force_distributed=False):
+    logger.debug("called infer_init_method")
     if args.distributed_init_method is not None or getattr(args, 'tpu', False):
         return
 
@@ -38,8 +39,7 @@ def infer_init_method(args, force_distributed=False):
             raise ValueError('--pipeline-devices is currently required for pipeline model parallelism')
         gpus_per_node = torch.cuda.device_count()
         num_pipeline_devices = len(set(args.pipeline_devices))
-        print(f"--- gpus_per_node: {gpus_per_node}\n numpipline_devices: {num_pipeline_devices}")
-        input("Pause")
+        logger.debug(f"--- gpus_per_node: {gpus_per_node}\n numpipline_devices: {num_pipeline_devices}")
         assert gpus_per_node >= num_pipeline_devices and gpus_per_node % num_pipeline_devices == 0, (
             'the number of unique device IDs in --pipeline-devices must evenly divide '
             'the number of GPUs per node (multi-node pipelining is not yet supported)'
@@ -227,39 +227,39 @@ def distributed_main(i, main, args, kwargs):
 
 
 def call_main(args, main, **kwargs):
-    if args.distributed_init_method is None:
-        print("distributed_utils---distributed_init_method is None")
-        input("Pause")
-        infer_init_method(args)
+    
+    # if args.distributed_init_method is None:
+    #     logger.debug("distributed_utils---distributed_init_method is None")
+    #     infer_init_method(args)
 
-    if args.distributed_init_method is not None:
-        print("distributed_utils---distributed_init_method is NOT None")
-        input("Pause")
-        # distributed training
-        if not args.distributed_no_spawn:
-            start_rank = args.distributed_rank
-            args.distributed_rank = None  # assign automatically
-            kwargs['start_rank'] = start_rank
-            torch.multiprocessing.spawn(
-                fn=distributed_main,
-                args=(main, args, kwargs),
-                nprocs=args.distributed_num_procs,
-            )
-        else:
-            distributed_main(args.device_id, main, args, kwargs)
-    elif getattr(args, "tpu", False):
-        import torch_xla.distributed.xla_multiprocessing as xmp
-        torch.multiprocessing.set_sharing_strategy("file_system")
-        xmp.spawn(
-            fn=distributed_main,
-            args=(main, args, kwargs),
-            nprocs=8,  # use all 8 TPU cores
-        )
-    else:
-        # single GPU main
-        print("Called single GPU main")
-        input("--Pause")
-        main(args, **kwargs)
+    # if args.distributed_init_method is not None:
+    #     logger.debug("distributed_utils---distributed_init_method is NOT None")
+    #     input("Pause")
+    #     # distributed training
+    #     if not args.distributed_no_spawn:
+    #         start_rank = args.distributed_rank
+    #         args.distributed_rank = None  # assign automatically
+    #         kwargs['start_rank'] = start_rank
+    #         torch.multiprocessing.spawn(
+    #             fn=distributed_main,
+    #             args=(main, args, kwargs),
+    #             nprocs=args.distributed_num_procs,
+    #         )
+    #     else:
+    #         distributed_main(args.device_id, main, args, kwargs)
+    # elif getattr(args, "tpu", False):
+    #     import torch_xla.distributed.xla_multiprocessing as xmp
+    #     torch.multiprocessing.set_sharing_strategy("file_system")
+    #     xmp.spawn(
+    #         fn=distributed_main,
+    #         args=(main, args, kwargs),
+    #         nprocs=8,  # use all 8 TPU cores
+    #     )
+    # else:
+    # single GPU mainlogger.debug
+    logger.debug("Called single GPU main")
+    input("--Pause")
+    main(args, **kwargs)
 
 
 def get_rank():

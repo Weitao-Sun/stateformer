@@ -33,7 +33,7 @@ from fairseq.trainer import Trainer
 logging.basicConfig(
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
-    level=os.environ.get("LOGLEVEL", "INFO").upper(),
+    level=os.environ.get("LOGLEVEL", "DEBUG").upper(),
     stream=sys.stdout,
 )
 logger = logging.getLogger("fairseq_cli.train")
@@ -46,8 +46,6 @@ def main(args):
         args.max_tokens is not None or args.max_sentences is not None
     ), "Must specify batch size either with --max-tokens or --max-sentences"
     
-    print(args)
-    input("Pause")
     metrics.reset()
 
     np.random.seed(args.seed)
@@ -345,7 +343,7 @@ def get_valid_stats(args, trainer, stats):
 def cli_main(modify_parser=None):
     parser = options.get_training_parser()
     args = options.parse_args_and_arch(parser, modify_parser=modify_parser)
-    print(args)
+    logger.debug(args)
     pause_input = input("Pause")
     if args.profile:
         with torch.cuda.profiler.profile():

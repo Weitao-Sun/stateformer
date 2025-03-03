@@ -21,4 +21,5 @@ from fairseq.model_parallel.megatron_trainer import MegatronTrainer
 from fairseq.trainer import Trainer
 
 if __name__ == "__main__":
-    print(torch.cuda.profiler.profile())
+    for i in range(torch.cuda.device_count()):
+        print(torch.cuda.get_device_properties(i).name)
